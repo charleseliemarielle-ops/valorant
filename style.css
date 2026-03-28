@@ -1,0 +1,25 @@
+.notification-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #1f2326;
+    padding: 12px 20px;
+    border-left: 5px solid #ff4655;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transform: translateX(-120%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 9999;
+}
+
+.notification-toast.active {
+    transform: translateX(0);
+}
+
+.notif-img { width: 40px; height: 40px; border-radius: 4px; background: #0f1923; padding: 2px; }
+.notif-text { font-size: 0.8rem; line-height: 1.2; }
+.notif-user { font-weight: 800; color: #ff4655; }
